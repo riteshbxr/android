@@ -1,7 +1,0 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    
-    <item android:id="@+id/action_addtripdone" 
-        android:showAsAction="always" 
-        android:icon="@drawable/ic_done"
-        android:title="@string/action_addtripdone"/>   
-</menu>
