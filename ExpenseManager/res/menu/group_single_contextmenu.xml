@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item
+        android:id="@+id/group_single_Context_edit"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_select_all"
+        android:title="SELECT ALL"
+        />
+<item
+        android:id="@+id/group_single_Context_delete"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/action_delete"/>  
+<item
+        android:id="@+id/group_single_Context_Hisaab"
+        android:orderInCategory="103"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_hisaab"
+        android:title="Show Result for Selected"/>
+<item
+        android:id="@+id/group_single_Context_Share"
+        android:orderInCategory="104"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_share"
+        android:title="Share Selected"/>
+<item
+        android:id="@+id/group_single_Context_export"
+        android:orderInCategory="105"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_send"
+        android:title="Export Selected"/>
+
+
+</menu>

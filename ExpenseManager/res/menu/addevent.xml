@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_EventHisaab"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_hisaab"
+        android:title="Hisaab"/>
+    
+<item
+        android:id="@+id/action_EventDone"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_done"
+        android:title="Done"/>
+</menu>

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"  
+    >
+<TextView
+        android:id="@+id/sn"
+        android:visibility="invisible"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/MainItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chk"
+        android:layout_marginLeft="16dp"
+        android:text="ITEM"
+        android:gravity="left|top"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@android:color/transparent" 
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/SubItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chk"
+        android:layout_alignLeft="@+id/MainItem"
+        android:layout_below="@+id/MainItem"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:text="SUB ITEM 1"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/SubItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chk"
+        android:layout_toRightOf="@+id/SubItem1"
+        android:layout_below="@+id/MainItem"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:text="SUB ITEM 2"
+        android:layout_marginLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:focusable="false"/>
+
+    <CheckBox
+        android:id="@+id/chk"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center" 
+        android:focusable="false"
+        />
+
+    
+
+</RelativeLayout>
+
+<!-- check box always visible, on click any check box, open contextual menu -->  

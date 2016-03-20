@@ -1,0 +1,55 @@
+# view AndroidManifest.xml #generated:83
+-keep class com.projects.em.CalcActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.projects.em.ContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:178
+-keep class com.projects.em.DB_CP { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class com.projects.em.EventActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.projects.em.GroupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:130
+-keep class com.projects.em.HisaabActivity { <init>(...); }
+
+# view res/layout/activity_contacts.xml #generated:31
+# view res/layout/activity_event.xml #generated:129
+# view res/layout/activity_group.xml #generated:6
+# view res/layout/activity_home.xml #generated:6
+# view res/layout/activity_shares.xml #generated:2
+-keep class com.projects.em.ListViewCustom { <init>(...); }
+
+# view AndroidManifest.xml #generated:142
+-keep class com.projects.em.MemberActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:154
+-keep class com.projects.em.SharesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.projects.em.TripActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class com.projects.em.UpdateEventActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.projects.em.UpdateGroupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.projects.em.UpdateTripActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class com.projects.em.ViewEventActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:193
+-keep class com.projects.utils.GcmBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:201
+-keep class com.projects.utils.GcmIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:182
+-keep class com.projects.utils.SyncActivity { <init>(...); }
+

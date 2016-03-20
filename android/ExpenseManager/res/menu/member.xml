@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+         >
+       <item
+        android:id="@+id/action_updatemember"
+        android:orderInCategory="102"
+        android:icon="@drawable/ic_done"
+        android:title="Done"
+        android:showAsAction="always"/>
+       
+       <item
+        android:id="@+id/action_import"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_import"
+        android:title="IMPORT"
+        android:showAsAction="ifRoom"
+            />
+    
+
+</menu>
