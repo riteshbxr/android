@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+<Button
+        android:id="@+id/btnregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Device">
+    </Button>
+<LinearLayout
+    android:id="@+id/lytRegister"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+
+	
+    
+	<EditText
+        android:id="@+id/txtUid"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="UID">
+    </EditText>
+    <Button
+        android:id="@+id/btnupdateUID"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="SaveUID">
+    </Button>
+</LinearLayout>
+<EditText
+        android:id="@+id/txttoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="id to which it is sent">
+    </EditText>
+<TextView
+    android:id="@+id/lblMessage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Recieved Message" />
+    
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Message to be sent">
+    </EditText>
+    
+    <Button
+        android:id="@+id/btnsendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send">
+    </Button>
+
+</LinearLayout>

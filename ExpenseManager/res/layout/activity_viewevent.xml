@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@color/white"
+     >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    
+    >
+
+
+
+      <TextView
+        android:id="@+id/lbleventname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Event Name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        />
+      <TextView
+        android:id="@+id/lbleventplacedate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbleventname"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Delhi, 23 Oct 2013"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+
+<TextView
+        android:id="@+id/lbleventexpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="64dp"
+        android:layout_below="@+id/lbleventplacedate"
+		android:layout_alignParentLeft="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/black"
+        android:text="Total Expense:"
+        android:textSize="16sp"
+        />
+<TextView
+        android:id="@+id/lbleventdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="64dp"
+        android:layout_below="@+id/eventexpense"
+		android:layout_alignParentLeft="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/black"
+        android:text="Description:"
+        android:textSize="16sp"
+        />
+
+<ImageView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/blackline"
+    android:layout_marginTop="4dp"/>
+<TextView
+        android:id="@+id/lbleventpaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="PAID BY"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+<TextView
+        android:id="@+id/lbleventpaidby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="paid by members"
+        android:textSize="16sp"
+        />
+<TextView
+        android:id="@+id/lbleventshared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="SHARED BY"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+<TextView
+        android:id="@+id/lbleventsharedby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="shared by members"
+        android:textSize="16sp"
+        />
+
+
+ </LinearLayout>
+
+    
+</ScrollView>

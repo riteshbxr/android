@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+            >
+    <item
+        android:id="@+id/action_sendSMS"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_send"
+        android:title="Send SMS"/>
+    <item
+        android:id="@+id/action_sendEmail"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_email"
+        android:title="Send SMS"/>
+</menu>
