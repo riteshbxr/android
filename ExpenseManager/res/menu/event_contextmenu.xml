@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item
+        android:id="@+id/event_Context_SelectAll"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_select_all"
+        android:title="SELECT ALL"
+        />
+
+<item
+        android:id="@+id/event_Context_delete"
+        android:orderInCategory="102"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/action_delete"/>
+<item
+        android:id="@+id/event_Context_Hisaab"
+        android:orderInCategory="103"
+        android:icon="@drawable/ic_hisaab"
+        android:showAsAction="ifRoom"
+        android:title="Show Result for Selected"/>  
+</menu>

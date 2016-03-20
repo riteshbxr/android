@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@color/white"  
+>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    	android:background="@color/white"  
+    >
+    
+    <TextView
+        android:id="@+id/contactuname"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="UID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    <EditText
+        android:id="@+id/member_uname"
+        style="@style/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contactuname"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"        
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/contactuname"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+      	android:focusable="true">
+            
+        </EditText>
+        
+</RelativeLayout>
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    	android:background="@color/white"  
+    >
+    
+    <TextView
+        android:id="@+id/contactname"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    <EditText
+        android:id="@+id/member_name"
+        style="@style/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contactname"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"        
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/contactname"
+        android:inputType="textCapWords"
+        android:selectAllOnFocus="true"
+      android:focusable="true">"
+            
+        </EditText>
+        
+</RelativeLayout>
+
+    <ImageView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/div"/>
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    
+    
+    <TextView 
+        android:id="@+id/contactphone"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"
+        android:text="Phone "
+        android:textAppearance="?android:attr/textAppearanceLarge"    />        
+
+        <EditText
+            android:id="@+id/member_phone"
+            style="@style/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/contactphone"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/contactphone"
+            android:inputType="phone"
+            android:selectAllOnFocus="true"
+          >
+  
+        </EditText>
+                </RelativeLayout>
+  <RelativeLayout 
+    android:id="@+id/lyt_choosephone"  
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:visibility="gone">
+    
+    
+    <TextView 
+        android:id="@+id/choosephone"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"
+        android:text="Select"
+        android:textAppearance="?android:attr/textAppearanceLarge"    />        
+		
+
+        <Spinner
+            android:id="@+id/phoneSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+                    android:layout_alignParentTop="true"
+            
+            android:layout_toRightOf="@+id/choosephone"
+            android:layout_alignBottom="@+id/choosephone"
+        />
+        </RelativeLayout>
+        <ImageView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/div"/>
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    
+    
+    <TextView 
+        android:id="@+id/contactemail"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:text="Email"
+        android:textAppearance="?android:attr/textAppearanceLarge"    />        
+		
+   <EditText
+       android:id="@+id/member_email"
+       style="@style/edittext"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignBottom="@+id/contactemail"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="8dp"
+       android:layout_marginLeft="16dp"
+       android:layout_marginRight="16dp"
+       android:layout_toRightOf="@+id/contactemail"
+       android:inputType="textEmailAddress"
+       android:selectAllOnFocus="true"
+        >
+
+        </EditText>
+                </RelativeLayout>
+   <RelativeLayout 
+    android:id="@+id/lyt_chooseemail"  
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:visibility="gone">
+    
+    
+    <TextView 
+        android:id="@+id/chooseemail"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:text="Select"
+        android:textAppearance="?android:attr/textAppearanceLarge"    />  
+		<Spinner
+            android:id="@+id/emailSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/chooseemail"
+            android:layout_alignBottom="@+id/chooseemail"
+            />
+                        </RelativeLayout>
+		<ImageView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/div"/>
+     
+        
+        
+        
+        
+    </LinearLayout>

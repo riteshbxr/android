@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Testbox</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_alertbox">AlertBox</string>
+    <string name="action_toast">Toast</string>
+    <string name="AlertBoxMessage">This is a simple alert box without buttons</string>
+    <string name="toastMsg">You are viewing a Toast</string>
+
+</resources>
