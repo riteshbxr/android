@@ -7,6 +7,8 @@
     <string name="action_toast">Toast</string>
     <string name="AlertBoxMessage">This is a simple alert box without buttons</string>
     <string name="toastMsg">You are viewing a Toast</string>
+    <string name="actlist_name">List</string>
+    <string name="actdetail_name">Details</string>
     <string-array  name="listitems" >
         <item>item 1</item>
         <item>item 2</item>

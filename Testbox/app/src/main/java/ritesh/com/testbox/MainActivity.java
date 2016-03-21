@@ -6,33 +6,32 @@ import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity  implements ListFragment.onItemSelectedListener{
 
+    private boolean dualPan;
+    private static int  curpos=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FragmentManager fm=getFragmentManager();
-        FragmentTransaction ft=fm.beginTransaction();
-        DetailFragment fragDetails=new DetailFragment();
-        ft.add(R.id.frame_detail,fragDetails);
-        ft.addToBackStack(null);
-        ft.commit();
-
+        View detailFrame=findViewById(R.id.frame_detail);
+        dualPan=detailFrame!=null && detailFrame.getVisibility()==View.VISIBLE;
+        if(savedInstanceState!=null)
+          showDetails(savedInstanceState.getInt("index", 0),false);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-
         return true;
     }
 
@@ -55,9 +54,42 @@ public class MainActivity extends Activity {
             case R.id.action_toast:
                 Toast.makeText(getApplicationContext(),getString(R.string.toastMsg),Toast.LENGTH_LONG).show();
                 return true;
-
         }
-
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onItemSelect(int i) {
+
+        showDetails(i);
+    }
+
+    private void showDetails(int i){
+        showDetails(i,true);
+
+    }   private void showDetails(int i,boolean detailspage) {
+        curpos = i;
+        if (dualPan) {
+            FragmentManager fm = getFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            DetailFragment detailFragment = (DetailFragment) fm.findFragmentById(R.id.frame_detail);
+            detailFragment = DetailFragment.NewDetailFragment(i);
+            ft.replace(R.id.frame_detail, detailFragment);
+            ft.addToBackStack(null);
+            ft.commit();
+        } else if(detailspage){
+            Intent intent = new Intent(this, DetailActivity.class);
+            intent.putExtra("index", i);
+            startActivity(intent);
+            //  Helper.get().showToast(getApplicationContext(),"details pane not found");
+        }
+    }
+
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("index",curpos);
+    }
+
 }
