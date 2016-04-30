@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/action_addnewcontact" 
+        android:showAsAction="always" 
+        android:icon="@drawable/ic_addfriend"
+        android:title="@string/action_addcontacts"/>
+     
+     <item android:id="@+id/action_refreshcontact" 
+        android:showAsAction="always" 
+        android:icon="@drawable/ic_reset"
+        android:title="@string/action_refresh"/> 
+</menu>

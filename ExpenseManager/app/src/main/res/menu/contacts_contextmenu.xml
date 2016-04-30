@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item
+        android:id="@+id/contacts_Context_SelectAll"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_select_all"
+        android:title="SELECT ALL"
+        />
+
+<item
+        android:id="@+id/contacts_Context_delete"
+        android:orderInCategory="101"
+        android:showAsAction="never"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/action_delete"/>
+    <item
+        android:id="@+id/contacts_Context_merge"
+        android:orderInCategory="102"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_merge"
+        android:title="@string/action_merge"/>
+    <item
+        android:id="@+id/contacts_Context_add"
+        android:orderInCategory="103"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_addfriend"
+        android:title="@string/action_addcontacts"/>
+</menu>

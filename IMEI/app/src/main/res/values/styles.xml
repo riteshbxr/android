@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <!-- Customize your theme here. -->
+        <item name="android:editTextStyle">@style/SelectOnFocus</item>
+    </style>
+<style name="SelectOnFocus" parent="@android:style/Widget.EditText">
+    <item name="android:selectAllOnFocus">true</item>
+</style>
+    <style name="EditTextUpdate" parent="@style/SelectOnFocus">
+    <item name="android:imeActionLabel">@string/action_calculate</item>
+        <item name="android:imeOptions">actionNone</item>
+
+</style>
+
+</resources>

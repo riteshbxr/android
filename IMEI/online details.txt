@@ -1,0 +1,8 @@
+host:mysql6.000webhost.com
+database name: a8181023_imei
+username: a8181023_admin
+password:tiger1
+
+server: server23.000webhost.com
+root: /home/a8181023
+control panel:https://members.000webhost.com/panel

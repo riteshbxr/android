@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/white"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".UpdateTripActivity"
+    android:orientation="vertical"
+	android:focusableInTouchMode="true"    
+>
+<EditText
+            android:id="@+id/addgroup_txtgroupname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            style="@style/edittext"
+            android:selectAllOnFocus="true"
+            android:hint="Give it a Name"
+            android:inputType="textCapWords"
+            >
+            
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/addgroup_txtgroupdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            style="@style/edittext"
+            android:hint="Small Desc"
+            android:inputType="textCapSentences"
+            android:selectAllOnFocus="true"
+           >
+  
+        </EditText>
+
+<TextView
+        android:id="@+id/lblgroupmember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="MEMBERS"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+<ImageView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/blackline"/>
+        <RelativeLayout
+            android:id="@+id/lyt_choosegroupmember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/layoutclick">
+
+       <ImageView
+        android:id="@+id/img_selectmembers"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/addicon"
+        />
+       <TextView
+        android:id="@+id/group_lblactivities"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_toRightOf="@+id/img_selectmembers"
+        android:layout_alignBottom="@+id/img_selectmembers"
+        android:layout_marginRight="16dp"
+        android:text="Select Members"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        />
+       </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="8dp" 
+           android:orientation="vertical">
+
+     <TextView
+        android:id="@+id/groupmember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />   
+
+
+     <Button
+         android:id="@+id/buttonproceed"
+         style="@style/mybutton"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="16dp"
+         android:layout_marginRight="16dp"
+         android:layout_marginTop="16dp"
+         android:visibility="gone"
+         android:text="Proceed" />
+  
+  </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="ComplexCode"
+        android:summary="@string/pref_desc_complexCode"
+        android:title="@string/pref_title_complexCode" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="characters"
+        android:defaultValue="@string/pref_default_Code"
+        android:inputType="textPassword|textCapCharacters"
+        android:key="CostCode"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_CostCode"
+        android:summary="@string/pref_desc_CostCode"/>
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_WS"
+        android:inputType="numberDecimal"
+        android:key="WSRate"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_WSRate"
+        android:summary="@string/pref_desc_WSRate"/>
+    <EditTextPreference
+
+        android:defaultValue="@string/pref_default_Retail"
+        android:inputType="numberDecimal"
+        android:key="RetailRate"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_RetailRate"
+        android:summary="@string/pref_desc_RetailRate"/>
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+
+</PreferenceScreen>

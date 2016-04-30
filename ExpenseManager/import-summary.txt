@@ -1,0 +1,63 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* eDITS.txt
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+* published\
+* published\CoverPic.png
+* published\ExpenseManagerKey.keystore
+* published\ScreenShot.png
+* published\Screenshot_2014-04-24-18-20-14.png
+* published\Screenshot_2014-04-24-18-20-39.png
+* published\Screenshot_2014-04-24-18-25-18.png
+* published\Shot2.png
+* published\Treckon Hisaab backups\
+* published\Treckon Hisaab backups\All three groupwise.trn
+* published\Treckon Hisaab backups\Leh and Manali.trn
+* published\Treckon Hisaab backups\New Hisaab Ghato.trn
+* published\Treckon Hisaab backups\Old Hisaab.trn
+* published\Treckon.apk
+* published\debug.keystore
+* published\ic_logo.png
+* published\ic_logo160.png
+* published\ic_logo240.png
+* published\ic_logo512.png
+* published\promo.png
+* published\shot23.png
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* lint.xml => app\lint.xml
+* proguard-project.txt => app\proguard-project.txt
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

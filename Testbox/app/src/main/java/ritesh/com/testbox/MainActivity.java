@@ -6,18 +6,26 @@ import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 
+import android.app.LoaderManager;
+import android.content.CursorLoader;
 import android.content.Intent;
+import android.content.Loader;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import static android.provider.ContactsContract.*;
 
-public class MainActivity extends Activity  implements ListFragment.onItemSelectedListener{
+
+public class MainActivity extends Activity  implements ListFragment.onItemSelectedListener, LoaderManager.LoaderCallbacks{
 
     private boolean dualPan;
     private static int  curpos=0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +34,10 @@ public class MainActivity extends Activity  implements ListFragment.onItemSelect
         dualPan=detailFrame!=null && detailFrame.getVisibility()==View.VISIBLE;
         if(savedInstanceState!=null)
           showDetails(savedInstanceState.getInt("index", 0),false);
+        getLoaderManager().initLoader(1,null,this);
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -92,4 +103,26 @@ public class MainActivity extends Activity  implements ListFragment.onItemSelect
         outState.putInt("index",curpos);
     }
 
+    @Override
+    public Loader onCreateLoader(int i, Bundle bundle) {
+        Uri BaseUri= Contacts.CONTENT_URI;
+        String[] CONTACTS_PROJECTION=new String[]{
+                Contacts._ID,
+                Contacts.DISPLAY_NAME,
+                Contacts.PHOTO_ID,
+                Contacts.CONTACT_STATUS
+        };
+        //String Select= Contacts._ID+" = "+;
+        return new CursorLoader(this,BaseUri,CONTACTS_PROJECTION,null,null,null);
+    }
+
+    @Override
+    public void onLoadFinished(Loader loader, Object o) {
+
+    }
+
+    @Override
+    public void onLoaderReset(Loader loader) {
+
+    }
 }

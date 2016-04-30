@@ -1,12 +1,13 @@
 package ritesh.com.testbox;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import ritesh.com.utils.Helper;
 
 /**
  * Created by rites on 19-03-2016.
@@ -20,7 +21,7 @@ public class DetailFragment extends Fragment {
        if(container==null)
             return  null ;
         txtDetail = new TextView(getActivity());
-        txtDetail.setText(Helper.getStringFromListIndex(getResources(),gettheIndex()));
+        txtDetail.setText(Helper.getStringFromListIndex(getResources(), gettheIndex()));
         return txtDetail;
     }
 

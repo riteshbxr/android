@@ -18,7 +18,7 @@ import android.widget.Toast;
  * Created by rites on 19-03-2016.
  */
 
-public class ListFragment extends Fragment {
+public class ListFragment extends Fragment{
     public   ListView listView;
     public boolean dualPan=false;
     public int curpos=0;
